@@ -26,7 +26,7 @@ A modern [Cookiecutter](https://github.com/cookiecutter/cookiecutter) template f
 
 2. Generate a Python package project:
    ```bash
-   cookiecutter https://github.com/yourusername/cookiecutter-python-package-template
+   cookiecutter https://github.com/hariharandata/cookiecutter-python-package-template
    ```
 
 3. You'll be prompted for these values:
@@ -41,18 +41,17 @@ A modern [Cookiecutter](https://github.com/cookiecutter/cookiecutter) template f
 The generated project will have this structure:
 
 ```
-your-project/
+{{cookiecutter.package_name}}/
+├── LICENSE
+├── MakeFile
+├── pyproject.toml
+├── README.md
 ├── src/
-│   └── your_package/
+│   └── {{cookiecutter.package_name}}/
 │       └── __init__.py
 ├── tests/
 │   ├── __init__.py
-│   └── test_your_package.py
-├── .gitignore
-├── LICENSE
-├── pyproject.toml
-├── README.md
-└── setup.cfg
+│   └── test_{{cookiecutter.package_name}}.py
 ```
 
 ## Development

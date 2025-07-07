@@ -1,6 +1,6 @@
 .PHONY: clean clean-test clean-pyc clean-build help
 .DEFAULT_GOAL := help
-ROOT={{cookiecutter.package_name}}
+ROOT=src/{{cookiecutter.package_name}}
 define BROWSER_PYSCRIPT
 import os, webbrowser, sys
 try:
