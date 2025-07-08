@@ -20,6 +20,12 @@ pip install -e ".[dev]"
 import {{cookiecutter.package_name}}
 ```
 
+## RUN
+To run the main.py file use 
+```python
+python3 -m src.{{cookiecutter.package_name}}.main
+```
+
 ## License
 
 This project is licensed under the MIT License.
