@@ -42,16 +42,27 @@ The generated project will have this structure:
 
 ```
 {{cookiecutter.package_name}}/
-├── LICENSE
-├── MakeFile
-├── pyproject.toml
 ├── README.md
+├── LICENSE
+├── Makefile
+├── pyproject.toml
+├── pytest.ini
+├── ruff.toml
+├── setup.cfg
+├── .gitignore
+├── .pylintrc
+├── .pre-commit-config.yaml
 ├── src/
 │   └── {{cookiecutter.package_name}}/
-│       └── __init__.py
-├── tests/
-│   ├── __init__.py
-│   └── test_{{cookiecutter.package_name}}.py
+│       ├── __init__.py
+│       ├── main.py
+│       └── logger/
+│           ├── __init__.py
+│           ├── log_config.py
+│           └── logging_config.yaml
+└── tests/
+   ├── __init__.py
+   └── test_{{cookiecutter.package_name}}.py
 ```
 
 ## Development
